@@ -517,7 +517,7 @@ a {
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     .parallelogram {
         margin-top: -25%;
