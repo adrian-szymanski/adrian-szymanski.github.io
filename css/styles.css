@@ -179,24 +179,6 @@ a {
     left: -8px;
 }
 
-.description {
-    margin-top: 40px;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-    align-content: center;
-    cursor: default;
-}
-
-.aboutDescription {
-    color: rgba(255, 255, 255, 0.945);
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 95px;
-    line-height: 50%;
-    text-transform: uppercase;
-}
-
 .leftBar {
     margin-top: 17%;
     margin-left: 1.25%;
@@ -216,16 +198,43 @@ a {
 	transform-origin: center center;
 }
 
+.description {
+    margin-top: 40px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-content: center;
+    cursor: default;
+}
+
+.aboutDescription {
+    color: rgba(255, 255, 255, 0.945);
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 95px;
+    line-height: 50%;
+    text-transform: uppercase;
+}
+
+.arrowDown {
+    width: 65px;
+    height: 65px;
+    margin-top: 2%;
+    filter: invert(100%);
+    display: inherit;
+    transform: rotate(-45deg);
+}
+
 #info {
     margin-top: 30%;
-    margin-bottom: 20%;
-    margin-right: 10%;
+    margin-bottom: 25%;
+    margin-left: 9%;
+    margin-right: 15%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
+	justify-content: flex-end;
     align-content: flex-end;
-    align-items: flex-end;
     cursor: default;
 }
 
@@ -270,7 +279,7 @@ a {
 
 .mainContact {
     margin-top: 120px;
-    margin-left: 30%;
+    margin-left: 20%;
     display: flex;
 	flex-direction: column;
     flex-wrap: nowrap;
@@ -281,23 +290,12 @@ a {
 }
 
 .address {
-    margin-left: -2.5%;
     font-size: 120px;
     text-transform: uppercase;
 }
 
-.arrowDown {
-    width: 5%;
-    height: 5%;
-    margin-left: 25%;
-    filter: invert(100%);
-    display: flex;
-	flex-direction: row;
-    flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-    align-content: center;
-    transform: rotate(-45deg);
+.contact {
+    margin-left: 3%;
 }
 
 .mailShape {
@@ -310,18 +308,18 @@ a {
 	flex-direction: row;
     flex-wrap: nowrap;
 	justify-content: center;
-	align-items: flex-start;
+	align-items:  center;
     align-content: center;
 }
 
 /*--------------------Media Query--------------------------*/
 
 
-@media (max-width: 1600px) {
+@media (max-width: 2050px) {
 
 
     .mainRow {
-        font-size: 140px;
+        font-size: 160px;
     }
 
     .mainWork {
@@ -349,10 +347,6 @@ a {
         margin-left: -35px;
     }
 
-    .description {
-        margin-left: 100px;
-    }
-
     .aboutDescription {
         font-size: 70px;
     }
@@ -365,12 +359,9 @@ a {
         font-size: 100px;
     }
 
-    .address {
-        margin-left: -4%;
-    }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
 
 
     .parallelogram {
@@ -386,18 +377,18 @@ a {
         margin-left: -10px;
     }
 
-    .description {
-        margin-left: 110px;
+    .aboutDescription {
+        font-size: 44px;
     }
 
-    .aboutDescription {
-        font-size: 60px;
+    .arrowDown {
+        display: none;
+        visibility: hidden;
     }
 
     #info {
-        margin-top: 80%;
+        margin-top: 10%;
         margin-bottom: 30%;
-        margin-left: 40%;
     }
 
     .mainWork {
@@ -408,47 +399,40 @@ a {
         font-size: 100px;
     }
 
-    .address {
-        margin-left: -4%;
-    }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1099px) {
 
 
     .parallelogram {
-        margin-top: -125px;
+        margin-top: -140px;
     }
 
     .mainRow {
-        font-size: 40px;
+        font-size: 44px;
     }
 
     .number {
         margin-bottom: 15px;
-        margin-left: -30px;
+        margin-right: 10%;
     }
 
     .circle {
         margin-top: 6%;
     }
 
-    .description {
-        margin-top: 2%;
-        margin-left: 25px;
-    }
-
     .aboutDescription {
-        font-size: 30px;
+        font-size: 60px;
     }
 
     #info {
         margin-top: 5%;
-        margin-left: 33%;
+        margin-left: 22%;
     }
 
     .arrowDown {
         visibility: hidden;
+        display: none;
     }
 
     .mainWork {
@@ -459,25 +443,15 @@ a {
         font-size: 60px;
     }
 
-    .address {
-        margin-top: -20%;
-        margin-left: -4%;
-    }
-
-    .contact {
-        margin-left: 8%;
-    }
-
     .big {
         font-size: 70px;
     }
 }
 
-@media (max-width: 500px) {
-
+@media (max-width: 800px) {
 
     .parallelogram {
-        margin-top: -100px;
+        margin-top: -17%;
     }
 
     .topRow {
@@ -486,13 +460,13 @@ a {
 
     .mainRow {
         margin-top: 175px;
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .number {
-        font-size: 8px;
+        font-size: 12px;
         margin-bottom: 5px;
-        margin-left: -55px;
+        margin-right: 10%;
     }
 
     .copyright {
@@ -505,22 +479,87 @@ a {
         margin-top: 6%;
     }
 
-    .description {
-        margin-left: 95px;
-    }
-
     .aboutDescription {
-        font-size: 26px;
+        font-size: 48px;
+        margin-left: 2%;
     }
 
     .leftBar {
         margin-left: -2%;
     }
 
-    .info {
+    #info {
         margin-top: 20%;
         margin-bottom: 40%;
-        margin-left: 2%;
+    }
+
+    .arrowDown {
+        visibility: hidden;
+        display: none;
+    }
+
+    .mainWork {
+        margin-top: 90px;
+        margin-left: 25%;
+    }
+
+    .work {
+        font-size: 60px;
+    }
+
+    .arrow {
+        margin-bottom: 10px;
+    }
+
+
+    .big {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .parallelogram {
+        margin-top: -25%;
+    }
+
+    .topRow {
+        margin-top: 50px;
+    }
+
+    .mainRow {
+        margin-top: 175px;
+        font-size: 28px;
+    }
+
+    .number {
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-right: 10%;
+    }
+
+    .copyright {
+        margin-top: 100px;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+        margin-top: 6%;
+    }
+
+    .aboutDescription {
+        font-size: 40px;
+        margin-left: 15%;
+    }
+
+    .leftBar {
+        margin-left: -2%;
+    }
+
+    #info {
+        margin-top: 20%;
+        margin-bottom: 40%;
     }
 
     .arrowDown {
@@ -540,17 +579,17 @@ a {
         margin-bottom: 10px;
     }
 
-    .address {
-        margin-top: -20%;
-        margin-left: -4%;
-        font-size: 80px;
-    }
-
-    .contact {
-        margin-left: 8%;
-    }
 
     .big {
         font-size: 70px;
+    }
+
+    .mainContact {
+        margin-top: 5%;
+        margin-left: 25%;
+    }
+
+    .contact {
+        margin-left: 9%;
     }
 }
